@@ -22,7 +22,7 @@ gcc .\minkuControl.c .\initialiser.c .\st.c .\cmt.c .\getSHA1.c .\sha1.c -o mink
 2. When ```minku_st``` is called, it creates directories in the path ```.\.minku\obj``` with names like that of the files present in the working directory, Directory1 and creates a file with name as the SHA-1 hash code of the content of the current version of file. Everytime ```minku_st``` function is called, a new file is created within ```.\.minku\obj\your_file_name``` for each changed file.
 3. Whenever ```minku_cmt``` is called, a new directory is created within ```.\.minku\cmt``` with name as the commit number. In the directory ```.\.minku\cmt\your_commit_number```, directories are created with filenames of the files in Directory1. In this directory ```.\.minku\cmt\your_commit_number\your_object_name```, a file is created with the name as the SHA-1 hash code of the file_contents of the latest staged version of the file.
 
-P.S. - kindly refer to the video explaining the flow of the Minku application - 
+P.S. - kindly refer to the video explaining the flow of the Minku application - [video link](https://drive.google.com/file/d/1cssbuAtRKaDK5nf_3d9y3NoaDH7jbaY9/view)
 
 ## What are areas of improvement?
 1. **Due to lack of time**, many important git features like reverting, branch handling and many other features are unavailable as of now. I will add them as soon as possible.
